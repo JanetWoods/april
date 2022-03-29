@@ -1,0 +1,1 @@
+{"version":3,"sources":["player.ts"],"names":[],"mappings":"","file":"player.js","sourcesContent":["export interface IPlayer {\n  id: number,\n        typeUserId: number,\n        userName: string,\n        password: string,\n        nameFirst: string,\n        nameLast: string,\n        groupId: number\n}\n"]}

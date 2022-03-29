@@ -1,0 +1,1 @@
+{"version":3,"sources":["pro-player.ts"],"names":[],"mappings":"","file":"pro-player.js","sourcesContent":["export interface IProPlayer {\n  id: number,\n  typeUserId: number,\n  userName: string,\n  password: string,\n  nameFirst: string,\n  nameLast: string,\n  podID: number\n}\n"]}

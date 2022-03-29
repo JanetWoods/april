@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["stars.component.scss"],"sourcesContent":[".crop{\r\n  overflow: hidden;\r\n}\r\ndiv{\r\n  cursor: pointer;\r\n}\r\n"],"file":"stars.component.css"}

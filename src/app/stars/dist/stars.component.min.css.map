@@ -1,0 +1,1 @@
+{"version":3,"sources":["stars.component.scss"],"names":[],"mappings":"AAAA,MACE,SAAU,OAGZ,IACE,OAAQ","file":"stars.component.min.css","sourcesContent":[".crop{\r\n  overflow: hidden;\r\n}\r\ndiv{\r\n  cursor: pointer;\r\n}\r\n"]}

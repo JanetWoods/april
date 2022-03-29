@@ -1,0 +1,15 @@
+<p>pro-teams works!</p>
+<div>
+  <table>
+    <th>Team</th>
+    <th><button (click)="togglePics()">Show Pics</button></th>
+    <tr *ngFor="let team of proTeams">
+    <div class="col-2">
+      {{team.proTeamName}}
+
+    <img *ngIf="showImage" [src]="team.picpath"/>
+  </div>
+    </tr>
+  </table>
+
+</div>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["team.ts"],"names":[],"mappings":"","file":"team.js","sourcesContent":["export interface ITeam {\n  id: number,\n  iTeamName: string,\n  ownerID:number,\n  rating:number,\n  players:[]\n}\n"]}
