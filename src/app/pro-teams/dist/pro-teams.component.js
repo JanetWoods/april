@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var ProTeamsComponent = /** @class */ (function () {
     function ProTeamsComponent() {
         this.showImage = false;
+        this.title = "Pro Teams";
         this._listFilter = '';
         this.filteredTeams = [];
         this.proTeams = [
@@ -213,7 +214,7 @@ var ProTeamsComponent = /** @class */ (function () {
         },
         set: function (value) {
             this._listFilter = value;
-            console.log('setting list filter value: ', value);
+            console.log('setting list filter value for Pro Teams to: ', value);
             this.filteredTeams = this.filterThem(value);
         },
         enumerable: true,
@@ -230,7 +231,7 @@ var ProTeamsComponent = /** @class */ (function () {
             this.showImage = false;
             console.log("ShowImage should be false now");
         }
-        if (!this.showImage) {
+        else if (!this.showImage) {
             this.showImage = true;
             console.log("clicked togglePics again, showImage set to true.");
         }

@@ -47,7 +47,7 @@ export class TeamsComponent implements OnInit {
       id: 2,
       iTeamName: 'Tigers',
       ownerID: 2,
-      rating: 3,
+      rating: 5,
       players: [],
     },
     {
@@ -68,7 +68,7 @@ export class TeamsComponent implements OnInit {
       id: 5,
       iTeamName: 'Dodgers',
       ownerID: 5,
-      rating: 3.75,
+      rating: 5,
       players: [],
     },
     {
@@ -82,7 +82,7 @@ export class TeamsComponent implements OnInit {
       id: 7,
       iTeamName: 'Snakes',
       ownerID: 7,
-      rating: 2.75,
+      rating: 2,
       players: [],
     },
     {

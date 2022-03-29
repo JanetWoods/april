@@ -8,6 +8,8 @@ import { IProTeam } from '../models/pro-team';
 })
 export class ProTeamsComponent implements OnInit {
   showImage: boolean = false;
+  title:string="Pro Teams";
+
   private _listFilter: string = '';
   constructor() {}
 
@@ -16,7 +18,7 @@ export class ProTeamsComponent implements OnInit {
   }
   set listFilter(value: string) {
     this._listFilter = value;
-    console.log('setting list filter value: ', value);
+    console.log('setting list filter value for Pro Teams to: ', value);
     this.filteredTeams = this.filterThem(value);
   }
   filterThem(listFilter: string): IProTeam[] {
@@ -30,7 +32,7 @@ export class ProTeamsComponent implements OnInit {
       this.showImage=false;
       console.log("ShowImage should be false now")
     }
-    if(!this.showImage){
+    else if(!this.showImage){
       this.showImage=true;
       console.log("clicked togglePics again, showImage set to true.");
     }
