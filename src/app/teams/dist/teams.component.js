@@ -24,7 +24,7 @@ var TeamsComponent = /** @class */ (function () {
                 id: 2,
                 iTeamName: 'Tigers',
                 ownerID: 2,
-                rating: 3,
+                rating: 5,
                 players: []
             },
             {
@@ -45,7 +45,7 @@ var TeamsComponent = /** @class */ (function () {
                 id: 5,
                 iTeamName: 'Dodgers',
                 ownerID: 5,
-                rating: 3.75,
+                rating: 5,
                 players: []
             },
             {
@@ -59,7 +59,7 @@ var TeamsComponent = /** @class */ (function () {
                 id: 7,
                 iTeamName: 'Snakes',
                 ownerID: 7,
-                rating: 2.75,
+                rating: 2,
                 players: []
             },
             {

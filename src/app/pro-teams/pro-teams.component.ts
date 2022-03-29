@@ -32,7 +32,7 @@ export class ProTeamsComponent implements OnInit {
       this.showImage=false;
       console.log("ShowImage should be false now")
     }
-    if(!this.showImage){
+    else if(!this.showImage){
       this.showImage=true;
       console.log("clicked togglePics again, showImage set to true.");
     }

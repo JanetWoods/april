@@ -1,31 +1,41 @@
-<div>
-  <title>{{title}}</title>
-</div>
-<div class="row">
-  <div class="col-2"> Filter By:</div>
-  <div class="col-4">
-    <input type="text" [(ngModel)]="listFilter"/>
-    </div>
-
-</div>
-<div class="row">
-  <div class="col-2">Filtered by: </div>
-  <div class="col-4">{{listFilter}} </div>
-</div>
-<div>
-  <table>
-    <th>Team</th>
-    <th><button (click)="togglePics()">Show Pics</button></th>
-    <tr *ngFor="let team of filteredTeams">
-    <div class="card">
-      <div class="card-header">
-        {{team.proTeamName}}
-      </div>
-      <div class="card-body">
-        <img *ngIf="showImage" [src]="team.picpath"/>
-      </div>
+<div class="card">
+  <div class="card-header">
+    {{ title }}
   </div>
-    </tr>
-  </table>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2">Filter By:</div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="listFilter" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h4>Filtered by: {{ listFilter }}</h4>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table *ngIf="filteredTeams.length">
+      <thead>
+        <tr>
 
+        </tr>
+        <th>
+          <button (click)="togglePics()">
+          {{showImage ? 'Hide' : 'Show'}} Pics</button>
+        </th>
+      </thead>
+      <tr *ngFor="let team of filteredTeams">
+        <div class="card">
+          <div class="card-header">
+            {{ team.proTeamName }}
+          </div>
+          <div class="card-body">
+            <img *ngIf="showImage" [src]="team.picpath" />
+          </div>
+        </div>
+      </tr>
+    </table>
+  </div>
 </div>
