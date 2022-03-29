@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["navigation.component.scss"],"sourcesContent":["nav{\r\n  margin: 2rem;\r\n  li{\r\n    margin: 2rem;\r\n  }\r\n}\r\n"],"file":"navigation.component.css"}
+{"version":3,"names":[],"mappings":"","sources":["navigation.component.scss"],"sourcesContent":["nav{\r\n  margin: 2rem;\r\n  li{\r\n    margin: 2rem;\r\n  }\r\n  a{\r\n    background-color: purple;\r\n  }\r\n}\r\n"],"file":"navigation.component.css"}

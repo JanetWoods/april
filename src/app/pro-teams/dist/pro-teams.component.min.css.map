@@ -1,0 +1,1 @@
+{"version":3,"sources":["pro-teams.component.scss"],"names":[],"mappings":"AAAA,OACE,iBAAkB","file":"pro-teams.component.min.css","sourcesContent":["button{\r\n  background-color: pink;\r\n}\r\n"]}

@@ -1,1 +1,1 @@
-{"version":3,"sources":["navigation.component.scss"],"names":[],"mappings":"AAAA,IAIA,OAHE,OAAQ","file":"navigation.component.min.css","sourcesContent":["nav{\r\n  margin: 2rem;\r\n  li{\r\n    margin: 2rem;\r\n  }\r\n}\r\n"]}
+{"version":3,"sources":["navigation.component.scss"],"names":[],"mappings":"AAAA,IAIA,OAHE,OAAQ,KAOV,MACE,iBAAkB","file":"navigation.component.min.css","sourcesContent":["nav{\r\n  margin: 2rem;\r\n  li{\r\n    margin: 2rem;\r\n  }\r\n  a{\r\n    background-color: purple;\r\n  }\r\n}\r\n"]}

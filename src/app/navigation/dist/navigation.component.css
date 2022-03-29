@@ -6,4 +6,8 @@ nav li {
   margin: 2rem;
 }
 
+nav a {
+  background-color: purple;
+}
+
 /*# sourceMappingURL=navigation.component.css.map */
