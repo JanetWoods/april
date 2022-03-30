@@ -1,0 +1,41 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+//overall styling for the body
+
+body {
+  background-color: rgb(184, 168, 168);
+}
+
+
+
+
+//Header
+
+header{
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  padding: 1rem 2%;
+}
+
+
+
+
+//footer
+footer {
+  background-color: $primaryColor;
+
+}
+
+
+

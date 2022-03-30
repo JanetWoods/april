@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { PodComponent } from './pod/pod.component';
 import { TeamsComponent } from './teams/teams.component';
 import { StarsComponent } from './stars/stars.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StarsComponent } from './stars/stars.component';
     NavigationComponent,
     PodComponent,
     TeamsComponent,
-    StarsComponent
+    StarsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
