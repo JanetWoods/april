@@ -8,13 +8,31 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-
 //overall styling for the body
 
 body {
   background-color: rgb(184, 168, 168);
+}
+
+main{
+  figure.banner{
+    width: 100%;
+  }
+  figure.banner img{
+    width: 100%;
+  }
+  h1{
+    font-size: 2rem;
+    margin: 1rem 0 0 $gutter;
+    color: $primaryColor;
+  }
+
+  hr.fadAway{
+    background: linear-gradient(to right, rgba(66,78,100,1) 0%, rgba(66,78,100,1) 100%);
+    height: 2px;
+    border: none;
+    margin: 0 $gutter;
+  }
 }
 
 
@@ -26,16 +44,80 @@ header{
   background-color: $primaryColor;
   color: $secondaryColor;
   padding: 1rem 2%;
+
+  h1{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  h2{
+    font-size: 1.05rem;
+    font-weight: normal;
+  }
 }
 
+// navigation
+
+nav{
+  background-color: $secondaryColor;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+
+  ul li{
+    float: left;
+    width: 25%;
+    border-right: 1px solid rgba(0,0,0,0.3);
+  }
+  ul li:last-child{
+    border-right: none;
+  }
+
+  // the block setting makes the whole area the a is in clickable
+  ul li a{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5rem 0;
+    color: $primaryColor;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+  }
+
+  ul li.active a{
+    background-color: darken($primaryColor, 10%);
+    color: $secondaryColor;
+  }
+
+  ul li a:hover{
+    color: $secondaryColor;
+    background-color: $primaryColor;
+  }
+
+
+}
 
 
 
 //footer
 footer {
-  background-color: $primaryColor;
+  width: 100%;
+    background-color: $primaryColor;
+  p{
+    text-align: center;
+    color: $secondaryColor;
+    padding: .75rem 0;
+    font-size: .9rem;
+  }
+  p a{
+    color: $secondaryColor;
+  }
+  }
 
+
+
+///clearfix anywhere needed
+
+.clearfix:after{
+  content:"";
+  display: table;
+  clear: both;
 }
-
-
 
