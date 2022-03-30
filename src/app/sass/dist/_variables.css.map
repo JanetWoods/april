@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_variables.scss"],"sourcesContent":["$primaryColor: #4d8cdf;\r\n$secondaryColor: rgb(173, 74, 144);\r\n$fontColor:black;\r\n"],"file":"_variables.css"}
