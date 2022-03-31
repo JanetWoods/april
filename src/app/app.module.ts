@@ -12,6 +12,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { StarsComponent } from './stars/stars.component';
 import { FooterComponent } from './footer/footer.component';
 import { BallComponent } from './ball/ball.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BallComponent } from './ball/ball.component';
     TeamsComponent,
     StarsComponent,
     FooterComponent,
-    BallComponent
+    BallComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
