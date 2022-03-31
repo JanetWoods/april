@@ -11,6 +11,7 @@ import { PodComponent } from './pod/pod.component';
 import { TeamsComponent } from './teams/teams.component';
 import { StarsComponent } from './stars/stars.component';
 import { FooterComponent } from './footer/footer.component';
+import { BallComponent } from './ball/ball.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     PodComponent,
     TeamsComponent,
     StarsComponent,
-    FooterComponent
+    FooterComponent,
+    BallComponent
   ],
   imports: [
     BrowserModule,

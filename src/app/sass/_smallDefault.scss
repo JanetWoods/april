@@ -14,42 +14,62 @@ body {
   background-color: rgb(184, 168, 168);
 }
 
-main{
-  figure.banner{
-    width: 100%;
+  figure.banner {
+    width: 100% - $dblegutter;
+    margin: 0.5rem $gutter;
+    height: 50%;
   }
-  figure.banner img{
-    width: 100%;
+  figure.banner img {
+    width: 100% - $dblegutter;
+    max-height: 50%;
+    margin: 0.5rem $gutter;
   }
-  h1{
+  figure.photo {
+    max-width: 100% - $dblegutter;
+    max-height: 25%;
+    margin: .5rem $gutter;
+    figcaption{
+      text-align: center;
+      color:$primaryColor;
+    }
+  }
+  figure.photo img {
+    align-content: center;
+    max-width: 100%- $dblegutter;
+    max-height: 25%;
+    margin: 0.5rem $gutter;
+  }
+
+  hr.fadAway {
+    background: linear-gradient(
+      to right,
+      rgb(33, 67, 132) 0%,
+      rgba(33, 67, 123, 1) 100%
+    );
+    height: 5px;
+    border: none;
+    margin: 0 $gutter;
+  }
+
+  h1 {
     font-size: 2rem;
     margin: 1rem 0 0 $gutter;
     color: $primaryColor;
   }
 
-  hr.fadAway{
-    background: linear-gradient(to right, rgba(66,78,100,1) 0%, rgba(66,78,100,1) 100%);
-    height: 2px;
-    border: none;
-    margin: 0 $gutter;
-  }
-}
-
-
-
 
 //Header
 
-header{
+header {
   background-color: $primaryColor;
   color: $secondaryColor;
   padding: 1rem 2%;
 
-  h1{
+  h1 {
     font-size: 2rem;
     font-weight: normal;
   }
-  h2{
+  h2 {
     font-size: 1.05rem;
     font-weight: normal;
   }
@@ -57,67 +77,60 @@ header{
 
 // navigation
 
-nav{
+nav {
   background-color: $secondaryColor;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
-  ul li{
+  ul li {
     float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0,0,0,0.3);
+    width: 33%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
-  ul li:last-child{
+  ul li:last-child {
     border-right: none;
   }
 
   // the block setting makes the whole area the a is in clickable
-  ul li a{
+  ul li a {
     display: block;
     text-align: center;
     font-weight: bold;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     color: $primaryColor;
     text-decoration: none;
     transition: background 0.75s ease, color 0.75s ease;
   }
 
-  ul li.active a{
+  ul li.active a {
     background-color: darken($primaryColor, 10%);
     color: $secondaryColor;
   }
 
-  ul li a:hover{
+  ul li a:hover {
     color: $secondaryColor;
     background-color: $primaryColor;
   }
-
-
 }
-
-
 
 //footer
 footer {
   width: 100%;
-    background-color: $primaryColor;
-  p{
+  background-color: $primaryColor;
+  p {
     text-align: center;
     color: $secondaryColor;
-    padding: .75rem 0;
-    font-size: .9rem;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
   }
-  p a{
+  p a {
     color: $secondaryColor;
   }
-  }
-
-
+}
 
 ///clearfix anywhere needed
 
-.clearfix:after{
-  content:"";
+.clearfix:after {
+  content: "";
   display: table;
   clear: both;
 }
-

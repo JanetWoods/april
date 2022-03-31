@@ -1,12 +1,12 @@
-<nav>
+<nav class="clearfix">
   <ul>
-    <li>
+    <li class="active">
       <a
         href="proplayer"
         [routerLink]="['/proplayer']"
         routerLinkActive="router-link-active"
       >
-        <span> ProPlayers </span>
+        ProPlayers
       </a>
     </li>
 
@@ -16,17 +16,19 @@
         [routerLink]="['/proteams']"
         routerLinkActive="router-link-active"
       >
-        <span> ProTeams </span>
+        ProTeams
       </a>
     </li>
 
     <li>
-      <a href="teams"
+      <a
+        href="teams"
         [routerLink]="['/teams']"
         routerLinkActive="router-link-active"
       >
-        <span> Teams </span>
+        Teams
       </a>
     </li>
   </ul>
 </nav>
+
