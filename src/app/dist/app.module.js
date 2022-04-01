@@ -18,6 +18,8 @@ var navigation_component_1 = require("./navigation/navigation.component");
 var pod_component_1 = require("./pod/pod.component");
 var teams_component_1 = require("./teams/teams.component");
 var stars_component_1 = require("./stars/stars.component");
+var footer_component_1 = require("./footer/footer.component");
+var news_component_1 = require("./news/news.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -31,7 +33,9 @@ var AppModule = /** @class */ (function () {
                 navigation_component_1.NavigationComponent,
                 pod_component_1.PodComponent,
                 teams_component_1.TeamsComponent,
-                stars_component_1.StarsComponent
+                stars_component_1.StarsComponent,
+                footer_component_1.FooterComponent,
+                news_component_1.NewsComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
