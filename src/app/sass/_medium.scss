@@ -1,14 +1,14 @@
-
-main{
-
+main {
   figure.photo {
     max-width: 50% - $dblegutter;
     float: left;
   }
 
-  div.blog article{
-  float:left;
-  width: 50%-$dblegutter;
-}
-
+  div.blog article {
+    float: left;
+    width: 50%-$dblegutter;
+  }
+  div.blog article:nth-child(2n + 1) {
+    clear: left;
+  }
 }

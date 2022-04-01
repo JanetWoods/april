@@ -1,8 +1,12 @@
-<div class="clearfix" >
-  <div *ngFor="let player of proPlayers">
-    <figure class="photo">
-      <img [src]="player.picPath" />
-      <figcaption>{{ player.name }}</figcaption>
-    </figure>
-  </div>
+<div class="clearfix">
+  <main>
+    <div *ngFor="let player of proPlayers">
+      <figure class="card">
+        <img [src]="player.picPath" />
+      </figure>
+      <div class="card-footer">
+        <p>{{ player.name }}</p>
+      </div>
+    </div>
+  </main>
 </div>
