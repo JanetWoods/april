@@ -1,21 +1,22 @@
-figure.photo {
-  max-width: 25% - $dblegutter;
-  float: left;
-}
-nav{
-  ul{
+
+nav {
+  ul {
     margin-left: $gutter;
-    border-left: 1px solid rgba(0,0,0,0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
-  ul li{
+  ul li {
     width: auto;
-    a{
-      padding: .5rem 1rem;
-    }
-
   }
-  ul li:last-child{
-    border-right: 1px solid rgba(0,0,0,0.3);
+  ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
-
+  ul li a {
+    padding: 0.5rem 1rem;
+  }
+}
+main {
+  figure.photo {
+    max-width: 25% - $dblegutter;
+    float: left;
+  }
 }
