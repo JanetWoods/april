@@ -1,0 +1,14 @@
+
+main{
+
+  figure.photo {
+    max-width: 50% - $dblegutter;
+    float: left;
+  }
+
+  div.blog article{
+  float:left;
+  width: 50%-$dblegutter;
+}
+
+}

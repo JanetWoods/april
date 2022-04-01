@@ -8,13 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var news_component_1 = require("./news/news.component");
 var pro_players_component_1 = require("./pro-players/pro-players.component");
 var pro_teams_component_1 = require("./pro-teams/pro-teams.component");
 var teams_component_1 = require("./teams/teams.component");
 var routes = [
     { path: 'proplayer', component: pro_players_component_1.ProPlayersComponent },
     { path: 'proteams', component: pro_teams_component_1.ProTeamsComponent },
-    { path: 'teams', component: teams_component_1.TeamsComponent }
+    { path: 'teams', component: teams_component_1.TeamsComponent },
+    { path: 'news', component: news_component_1.NewsComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

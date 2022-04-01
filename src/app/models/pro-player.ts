@@ -1,9 +1,14 @@
 export interface IProPlayer {
   id: number,
-  typeUserId: number,
-  userName: string,
-  password: string,
-  nameFirst: string,
-  nameLast: string,
-  podID: number
+  name: string,
+  position: string,
+  team: string,
+  adp: number,
+  adp_formatted: string,
+  times_drafted: number,
+  high: number,
+  low: number,
+  stdev: number,
+  bye: number,
+  picPath: string
 }
