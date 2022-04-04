@@ -42,3 +42,11 @@ div#wrapper {
   margin: 2rem auto;
   box-shadow: 0 0 10px #000000;
 }
+body{
+  background-image: url(../../assets/images/background.jpg);
+  background-size: contain;
+}
+header, nav, main, footer{
+  max-width: 60rem;
+  margin: 0 auto;
+}
