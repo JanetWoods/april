@@ -1,14 +1,29 @@
 main {
+  padding: 1rem 2%;
+
   figure.photo {
     max-width: 50% - $dblegutter;
     float: left;
   }
 
-  div.blog article {
-    float: left;
-    width: 50%-$dblegutter;
+  .news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: .5rem;
   }
-  div.blog article:nth-child(2n + 1) {
-    clear: left;
+
+  .blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: .5rem;
+  }
+  .blog article:nth-child(1){
+    grid-column: 1 / span3;
+  }
+
+  .blog article:nth-child(5){
+    grid-column: 1 / span2;
   }
 }

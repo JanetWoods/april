@@ -14,25 +14,19 @@ nav {
   }
 }
 main {
+  padding: 1rem 2%;
   figure.photo {
     max-width: 25% - $dblegutter;
     float: left;
   }
-  div.blog article {
+  div.card {
     float: left;
     width: 33.33%-$dblegutter;
   }
-  div.blog article:nth-child(2n + 1) {
-    clear: none;
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  div.blog article:nth-child(3n + 1) {
-    clear: left;
-  }
-  div.card  {
-    float: left;
-    width: 33.33%-$dblegutter;
-  }
-
 }
 // The Wrapper is used to contain the page contents from taking up too much space on large devices.
 //div margin puts 2rem top & bottom. Auto margin centers the page left to right
@@ -41,4 +35,34 @@ div#wrapper {
   max-width: 80rem;
   margin: 2rem auto;
   box-shadow: 0 0 10px #000000;
+}
+body {
+  background-image: url(../../assets/images/background.jpg);
+  background-size: contain;
+}
+header,
+nav,
+main,
+footer {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blog article:nth-child(1) {
+  grid-column: 1 / span4;
+}
+.blog article:nth-child(5){
+  grid-column: 1/ span2;
+  grid-row: 3/span2
+  ;
+  border: solid gray;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.blog article:nth-child(6){
+  grid-column: 1/ span3;
+    border: solid gray;
+  margin: 1rem 1rem 1rem 1rem;
 }

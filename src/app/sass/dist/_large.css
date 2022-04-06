@@ -1,0 +1,67 @@
+nav ul {
+  margin-left: 2%;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li {
+  width: auto;
+}
+
+nav ul li:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+}
+
+main {
+  padding: 1rem 2%;
+  background-color: green;
+}
+
+main figure.photo {
+  max-width: 21%;
+  float: left;
+}
+
+main div.blog article {
+  float: left;
+  width: 29.33%;
+}
+
+main div.blog article:nth-child(2n + 1) {
+  clear: none;
+}
+
+main div.blog article:nth-child(3n + 1) {
+  clear: left;
+}
+
+main div.card {
+  float: left;
+  width: 29.33%;
+}
+
+main .news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div#wrapper {
+  max-width: 80rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px #000000;
+}
+
+body {
+  background-image: url(../../assets/images/background.jpg);
+  background-size: contain;
+}
+
+header, nav, main, footer {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=_large.css.map */

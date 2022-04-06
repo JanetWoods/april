@@ -79,10 +79,12 @@ header {
 nav {
   background-color: $secondaryColor;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-
+ul{
+  margin-left: 2%;
+}
   ul li {
     float: left;
-    width: 25%;
+    width: 20%;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
   ul li:last-child {
@@ -138,6 +140,8 @@ footer {
 //////////////main.................
 
 main {
+
+  padding: 1rem 2%;
   figure.banner {
     width: 100%;
   }
@@ -145,13 +149,10 @@ main {
     width: 100%;
   }
 
-  div.blog article {
-    margin: 0.5rem $gutter;
-    width: 100% - $dblegutter;
-  }
+
   h1 {
     font-size: 2rem;
-    margin: 2rem 0 0 $gutter;
+    margin: .5rem 0 0 $gutter;
     color: $primaryColor;
   }
   h2 {
@@ -166,5 +167,16 @@ main {
   p {
     line-height: 130%;
     color: $fontColor;
+  }
+  .news{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog article:nth-child(1){
+    grid-column: 1 / span2;
   }
 }
