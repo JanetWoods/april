@@ -138,6 +138,8 @@ footer {
 //////////////main.................
 
 main {
+
+  padding: 1rem 2%;
   figure.banner {
     width: 100%;
   }
@@ -166,5 +168,9 @@ main {
   p {
     line-height: 130%;
     color: $fontColor;
+  }
+  .news{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

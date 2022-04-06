@@ -236,6 +236,10 @@ footer p a {
   clear: both;
 }
 
+main {
+  padding: 1rem 2%;
+}
+
 main figure.banner {
   width: 100%;
 }
@@ -271,7 +275,15 @@ main p {
   color: black;
 }
 
-@media only screen and (min-width: 35ewm) {
+main .news {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 450px) {
+  main {
+    padding: 1rem 2%;
+  }
   main figure.photo {
     max-width: 46%;
     float: left;
@@ -283,9 +295,13 @@ main p {
   main div.blog article:nth-child(2n + 1) {
     clear: left;
   }
+  main .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media only screen and (min-width: 60ewm) {
+@media only screen and (min-width: 700px) {
   nav ul {
     margin-left: 2%;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
@@ -298,6 +314,9 @@ main p {
   }
   nav ul li a {
     padding: 0.5rem 1rem;
+  }
+  main {
+    padding: 1rem 2%;
   }
   main figure.photo {
     max-width: 21%;
@@ -316,6 +335,10 @@ main p {
   main div.card {
     float: left;
     width: 29.33%;
+  }
+  main .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   div#wrapper {
     max-width: 80rem;

@@ -14,6 +14,7 @@ nav {
   }
 }
 main {
+  padding: 1rem 2%;
   figure.photo {
     max-width: 25% - $dblegutter;
     float: left;
@@ -32,7 +33,10 @@ main {
     float: left;
     width: 33.33%-$dblegutter;
   }
-
+  .news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 // The Wrapper is used to contain the page contents from taking up too much space on large devices.
 //div margin puts 2rem top & bottom. Auto margin centers the page left to right

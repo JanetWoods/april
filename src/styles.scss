@@ -8,11 +8,11 @@
 @import './app//sass/smallDefault';
 
 
-@media only screen and (min-width: 35ewm){
+@media only screen and (min-width: 450px){
   @import './app//sass/medium';
 }
 
-@media only screen and (min-width: 60ewm){
+@media only screen and (min-width: 700px){
   @import './app//sass/large';
 }
 
